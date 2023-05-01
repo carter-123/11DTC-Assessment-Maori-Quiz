@@ -1,4 +1,4 @@
-""" Component 1 - Yes/No checker v3 - based on v2
+""" Component 1 - Instructions v3 - based on v2
 Loop code for better efficiency
 Force answer to be lowercase to prevent error with capital letters
 """
