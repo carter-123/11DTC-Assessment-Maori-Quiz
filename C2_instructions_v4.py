@@ -29,5 +29,5 @@ def instructions_welcome(question_text):
 
 # Main routine
 show_instruction = instructions_welcome("Welcome to the Maori Quiz! "
-                                        "\nDo you want to see the instructions?")
+                                        "\nDo you want to see the instructions? ")
 print(f"You entered {show_instruction}")

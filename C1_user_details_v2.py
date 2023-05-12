@@ -10,7 +10,7 @@ valid = False
 while not valid:
     try:
 
-        user_age = int(input("How old are you? "))
+        user_age = input("How old are you? ")
 
         if user_age == int:
             print(f"Your name is {user_name} and you are {user_age} years old!")

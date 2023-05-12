@@ -2,14 +2,15 @@
 Put in rounds and a round counter
 """
 import random
-rounds = 0
+question_number = 1
 # List of maori numbers
 numbers = ["Tahi", "Rua", "Toru", "Wha", "Rima", "Ono", "Whitu", "Waru", "Iwa", "Tekau"]
 
 
-while rounds < 10:
+while question_number <= 10:
     # Picking random number from the list
     for item in range(1):
         number = random.choice(numbers)
-        input(f"What number is {number} in english? ")
-        rounds += 1
+        input(f"Question {question_number}\n"
+              f"What number is {number} in english? ")
+        question_number += 1
