@@ -1,4 +1,4 @@
-""" Component 1 - Instructions checker v4 - based on v3
+""" Component 2 - Instructions v4 - based on v3
 Turn code into a function
 """
 
@@ -30,4 +30,3 @@ def instructions_welcome(question_text):
 # Main routine
 show_instruction = instructions_welcome("Welcome to the Maori Quiz! "
                                         "\nDo you want to see the instructions? ")
-print(f"You entered {show_instruction}")
