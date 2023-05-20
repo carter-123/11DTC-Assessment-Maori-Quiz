@@ -17,3 +17,7 @@ def user_details():
 
         except ValueError:
             print(error)
+
+
+# main routine
+user_details()

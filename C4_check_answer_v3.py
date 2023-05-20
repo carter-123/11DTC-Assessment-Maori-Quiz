@@ -9,7 +9,7 @@ def establish_quiz():
     question_number = 1
     score = 0
     # List of Maori numbers and their corresponding English numbers
-    number_mapping = {
+    number_list = {
         "Tahi": "One",
         "Rua": "Two",
         "Toru": "Three",
@@ -23,7 +23,7 @@ def establish_quiz():
     }
 
     # Get a number from the list of Maori numbers
-    numbers = list(number_mapping.keys())
+    numbers = list(number_list.keys())
 
     # Make sure that the rounds do not go over 10
     while question_number <= 10 and numbers:
@@ -32,15 +32,15 @@ def establish_quiz():
                        f"What number is {number} in English? ")
         question_number += 1
 
-        correct_answer = number_mapping[number]
+        correct_answer = number_list[number]
         # Check answer
         if answer.capitalize() == correct_answer or answer == number \
-                or answer == str(list(number_mapping.keys()).index(number) + 1):
-            print(f"Correct! The answer was {correct_answer}.")
+                or answer == str(list(number_list.keys()).index(number) + 1):
             # Component 5 - add score for correct answer
             score += 1
+            print(f"Correct! The answer was {correct_answer}. Your score is {score}!")
         else:
-            print(f"That is wrong. The answer was {correct_answer}.")
+            print(f"That is wrong. The answer was {correct_answer}. Your score is {score}.")
 
         # Remove the chosen number from the list
         numbers.remove(number)

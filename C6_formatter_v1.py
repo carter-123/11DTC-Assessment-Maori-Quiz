@@ -8,3 +8,8 @@ def formatter(symbol, text):
     formatted_text = f"{sides} {text} {sides}"
     top_bottom = symbol * len(formatted_text)
     return f"{top_bottom}\n{formatted_text}\n{top_bottom}"
+
+
+print(formatter('=', 'Welcome!'))
+print(formatter('*', 'Correct!'))
+print(formatter('.', 'Goodbye!'))

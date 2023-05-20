@@ -13,7 +13,15 @@ def instructions_welcome(question_text):
         # If answer is yes, show instructions
         if answer == 'yes' or answer == 'y':
             answer = 'Yes'
-            print("Display instructions")
+            print("Here are the instructions!")
+            print()
+            print("When you start, a question will give you a random number in Maori from 1-10")
+            print()
+            print("You must enter the correct english number to earn 1 point (can enter either the word or the number)")
+            print()
+            print("If you get it wrong, you don't get anything!")
+            print()
+            print("Good luck and have fun!")
             return answer
 
         # If answer is no, continue program
